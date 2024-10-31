@@ -1,4 +1,4 @@
-import CustomizedTimeline from './Timeline';
+import CustomizedTimeline from './CustomizedTimeline';
 
 const Experience = () => {
   return (
