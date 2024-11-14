@@ -1,0 +1,11 @@
+.column {
+  justify-items: left;
+  margin: 0 auto;
+  width: fit-content;
+
+  @media (min-width: 1000px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 40px;
+  }
+}
