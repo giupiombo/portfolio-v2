@@ -3,9 +3,38 @@ import classes from './Certification.module.css';
 import google from '../images/google.png';
 import meta from '../images/meta.png';
 import aws from '../images/aws.png';
+import awsWhite from '../images/white-aws.png';
 import udemy from '../images/udemy.png';
+import React, { useState, useEffect } from 'react';
 
 const Certification = () => {
+  const [theme, setTheme] = useState('light'); // Default theme to 'light'
+  const [awsImage, setAwsImage] = useState(aws);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleThemeChange = () => {
+      const currentTheme = mediaQuery.matches ? 'dark' : 'light';
+      setTheme(currentTheme);
+    };
+
+    mediaQuery.addEventListener('change', handleThemeChange);
+
+    handleThemeChange();
+
+    return () => {
+      mediaQuery.removeEventListener('change', handleThemeChange);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (theme === 'dark') {
+      setAwsImage(awsWhite);
+    } else {
+      setAwsImage(aws);
+    }
+  }, [theme]);
+
   const certificates = [
     {
       logo: google,
@@ -20,7 +49,7 @@ const Certification = () => {
       date: 'Issued Sep 2024',
     },
     {
-      logo: aws,
+      logo: awsImage,
       title: 'Certified Cloud Practitioner',
       link: 'https://www.credly.com/badges/47a25b5c-8e9e-4f5b-ba9b-e838f005c6cd/linked_in_profile',
       date: 'Issued Mar 2023',
@@ -33,7 +62,7 @@ const Certification = () => {
     },
     {
       logo: udemy,
-      title: 'React native',
+      title: 'React Native',
       link: 'https://udemy-certificate.s3.amazonaws.com/pdf/UC-a7187b09-d6c2-4a1b-8659-1feca2cd594b.pdf',
       date: 'Issued Mar 2023',
     },

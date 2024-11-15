@@ -19,19 +19,23 @@ export default function CustomizedTimeline() {
           sx={{ m: 'auto 0' }}
           align="right"
           variant="body2"
-          color="text.secondary"
+          // color="text.secondary"
         >
           Feb 2023 - Present
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
-          <TimelineDot color="primary" variant="outlined">
+          <TimelineDot
+            sx={{ backgroundColor: '#EDEDED' }}
+            // color="#3A8FB7"
+            // variant="outlined"
+          >
             <img src={stefanini} width={50} />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
-          <Typography variant="h6" component="span">
+          <Typography variant="h6" component="span" color="#FF69B4">
             Stefanini
           </Typography>
           <Typography>
@@ -47,19 +51,23 @@ export default function CustomizedTimeline() {
         <TimelineOppositeContent
           sx={{ m: 'auto 0' }}
           variant="body2"
-          color="text.secondary"
+          // color="text.secondary"
         >
           May 2022 - Aug 2022
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
-          <TimelineDot color="primary" variant="outlined">
+          <TimelineDot
+            sx={{ backgroundColor: '#EDEDED' }}
+            // color="#3A8FB7"
+            // variant="outlined"
+          >
             <img src={tableau} width={50} />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
-          <Typography variant="h6" component="span">
+          <Typography variant="h6" component="span" color="#FF69B4">
             Tableau
           </Typography>
           <Typography>
@@ -76,19 +84,23 @@ export default function CustomizedTimeline() {
           sx={{ m: 'auto 0' }}
           align="right"
           variant="body2"
-          color="text.secondary"
+          // color="text.secondary"
         >
           Sep 2020 - Apr 2022
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
-          <TimelineDot color="primary" variant="outlined">
+          <TimelineDot
+            sx={{ backgroundColor: '#EDEDED' }}
+            // color="#3A8FB7"
+            // variant="outlined"
+          >
             <img src={ttu} width={50} />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
-          <Typography variant="h6" component="span">
+          <Typography variant="h6" component="span" color="#FF69B4">
             TTU
           </Typography>
           <Typography>
@@ -104,19 +116,23 @@ export default function CustomizedTimeline() {
         <TimelineOppositeContent
           sx={{ m: 'auto 0' }}
           variant="body2"
-          color="text.secondary"
+          // color="text.secondary"
         >
           May 2022 - Aug 2022
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
-          <TimelineDot color="primary" variant="outlined">
+          <TimelineDot
+            sx={{ backgroundColor: '#EDEDED' }}
+            // color="#3A8FB7"
+            // variant="outlined"
+          >
             <img src={tableau} width={50} />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
-          <Typography variant="h6" component="span">
+          <Typography variant="h6" component="span" color="#FF69B4">
             Tableau
           </Typography>
           <Typography>
