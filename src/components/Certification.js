@@ -69,7 +69,7 @@ const Certification = () => {
   ];
 
   return (
-    <>
+    <div className={classes.certification}>
       <h2>Certification</h2>
       <h3>Things I earned...</h3>
       <div className={classes.column}>
@@ -83,7 +83,7 @@ const Certification = () => {
           />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

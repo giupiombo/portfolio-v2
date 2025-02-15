@@ -9,8 +9,8 @@ const Work = () => {
     <div className={classes.work}>
       <Hero />
       <Experience />
-      <Education />
       <Certification />
+      <Education />
     </div>
   );
 };

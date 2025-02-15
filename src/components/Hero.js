@@ -10,7 +10,7 @@ const Hero = () => {
       <h1>
         Hi, <ReactTyped strings={['my name is Giulia.']} typeSpeed={100} loop />
       </h1>
-      <div className={classes.column}>
+      {/* <div className={classes.column}>
         <div className={classes.item}>
           <img src={art} alt="work" width={50} />
           <p>Creative</p>
@@ -23,7 +23,7 @@ const Hero = () => {
           <img src={skills} alt="skills" width={50} />
           <p>Organized</p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

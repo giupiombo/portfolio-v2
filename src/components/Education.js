@@ -3,7 +3,7 @@ import classes from './Education.module.css';
 
 const Education = () => {
   return (
-    <>
+    <div className={classes.education}>
       <h2>Education</h2>
       <h3>Things I learned...</h3>
       <div className={classes.itemColumn}>
@@ -26,7 +26,7 @@ const Education = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

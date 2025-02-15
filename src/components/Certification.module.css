@@ -1,3 +1,14 @@
+.certification {
+  /* background-color: #f8f9fa; */
+  background: linear-gradient(to bottom, #e9ecef, #ffffff);
+  @media (prefers-color-scheme: dark) {
+    background: linear-gradient(to bottom, #2a2a3a, #1e1e2e);
+  }
+  /* background-color: #2a2a3a; */
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
 .column {
   justify-items: left;
   margin: 0 auto;

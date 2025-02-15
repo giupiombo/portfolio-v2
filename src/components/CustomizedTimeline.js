@@ -70,13 +70,35 @@ export default function CustomizedTimeline() {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent sx={{ py: '12px', px: 2 }}>
-            <Typography variant="h6" component="span" color="#FF69B4">
+            <Typography
+              variant="h6"
+              component="span"
+              color="#FF69B4"
+              style={{ fontWeight: 'bolder' }}
+            >
               {item.company}
             </Typography>
-            <Typography color="#3A8FB7">{item.role}</Typography>
+            <Typography color="#3A8FB7" style={{ fontWeight: 'bolder' }}>
+              {item.role}
+            </Typography>
             {item.description.map((line, idx) => (
-              <Typography key={idx}>{line}</Typography>
+              <Typography
+                key={idx}
+                style={{ marginBottom: '0.5rem', textAlign: 'justify' }}
+              >
+                {line}
+              </Typography>
             ))}
+            {/* <ul>
+              {item.description.map((line, idx) => (
+                <li
+                  key={idx}
+                  style={{ marginBottom: '0.5rem', textAlign: 'justify' }}
+                >
+                  {line}
+                </li>
+              ))}
+            </ul> */}
           </TimelineContent>
         </TimelineItem>
       ))}
