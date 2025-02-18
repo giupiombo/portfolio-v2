@@ -1,7 +1,4 @@
 .work {
   text-align: center;
-  color: #1e293b;
-  @media (prefers-color-scheme: dark) {
-    color: #ededed;
-  }
+  color: var(--text-color);
 }

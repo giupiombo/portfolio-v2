@@ -3,6 +3,7 @@ import work from '../images/work.png';
 import art from '../images/art.png';
 import skills from '../images/skills.png';
 import classes from './Hero.module.css';
+import React, { useEffect, useState } from 'react';
 
 const Hero = () => {
   return (

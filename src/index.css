@@ -1,3 +1,17 @@
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-tertiary: #e9ecef;
+  --text-color: #1e293b;
+}
+
+.dark-mode {
+  --bg-primary: #1e1e2e;
+  --bg-secondary: #2a2a3a;
+  --bg-tertiary: #2a2a3a;
+  --text-color: #ededed;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,10 +20,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #ffffff;
-  @media (prefers-color-scheme: dark) {
-    background-color: #1e1e2e;
-  }
+  background-color: var(--bg-primary);
 }
 
 html {

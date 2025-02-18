@@ -1,10 +1,5 @@
 .certification {
-  /* background-color: #f8f9fa; */
-  background: linear-gradient(to bottom, #e9ecef, #ffffff);
-  @media (prefers-color-scheme: dark) {
-    background: linear-gradient(to bottom, #2a2a3a, #1e1e2e);
-  }
-  /* background-color: #2a2a3a; */
+  background: linear-gradient(to bottom, var(--bg-tertiary), var(--bg-primary));
   padding-top: 10vh;
   padding-bottom: 10vh;
 }
