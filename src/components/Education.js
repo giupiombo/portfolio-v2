@@ -5,7 +5,7 @@ const Education = () => {
   return (
     <div className={classes.education}>
       <h2>Education</h2>
-      <h3>Things I learned...</h3>
+      <h3>Things I achieved...</h3>
       <div className={classes.itemColumn}>
         <div className={classes.one}>
           <img src={ttu} width={200} />

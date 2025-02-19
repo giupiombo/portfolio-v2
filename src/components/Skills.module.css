@@ -1,6 +1,8 @@
 .skills {
-  padding-left: 10vw;
-  padding-right: 10vw;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  padding-left: 15vw;
+  padding-right: 15vw;
   text-align: center;
   background: linear-gradient(to bottom, var(--bg-tertiary), var(--bg-primary));
 }

@@ -1,4 +1,4 @@
-import { FaAws, FaGithub } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 import { SiNextdotjs, SiSnowflake, SiVercel } from 'react-icons/si';
 import classes from './Skills.module.css';
 import python from '../images/icons8-python.svg';
