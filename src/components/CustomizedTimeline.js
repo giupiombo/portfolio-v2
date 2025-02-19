@@ -20,9 +20,10 @@ export default function CustomizedTimeline() {
       company: 'Stefanini',
       role: 'Software Developer I',
       description: [
-        'Engineered user-friendly interfaces using React, TypeScript, CSS, and AWS services to provide real-time insights for efficient monitoring and optimization of Lambda function performance.',
-        'Designed and implemented an intuitive platform for a LLM initiative and enhanced visual elements using React, TypeScript, CSS, and Material-UI. Incorporated account validation through Azure.',
-        'Demonstrated proficiency in serverless architecture by implementing AWS Lambdas with Python and orchestrated them with Step Functions for efficient microservices.',
+        'Engineered user-friendly web interfaces using React, TypeScript, CSS and AWS services to provide real-time insights for efficient monitoring and optimization of Lambda function performance.',
+        'Designed and implemented an intuitive website for a LLM initiative and enhanced visual elements using React, TypeScript, CSS, and Material-UI. Incorporated authentication through Azure. ',
+        'Configured AWS API Gateway and developed AWS Lambda functions in Python and Java to handle shipment processing, including validation, creation, voiding, and price estimation, ensuring efficiency and scalability.',
+        'Designed and implemented an ETL pipeline using AWS Lambda, SNS, SQS, and RDS to efficiently process text files from S3 bucket. Developed in Python, with GitHub for version control and SonarCloud for continuous code quality analysis. ',
       ],
     },
     {
@@ -41,7 +42,7 @@ export default function CustomizedTimeline() {
       company: 'Texas Tech University',
       role: 'Undergraduate Student Researcher',
       description: [
-        'Built a cost-efficient hand prosthetic using servo motors and Arduino Uno, integrated with Google AMR technology to control the hand by voice commands as a proof-of-concept.',
+        'Built a cost-efficient hand prosthetic proof-of-concept using servo motors and Arduino Uno, integrated with Google AMR technology to control the hand by voice commands.',
       ],
     },
     {

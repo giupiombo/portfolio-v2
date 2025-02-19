@@ -1,6 +1,7 @@
 .education {
   padding-top: 10vh;
   padding-bottom: 10vh;
+  background: linear-gradient(to bottom, var(--bg-tertiary), var(--bg-primary));
 }
 
 .itemColumn {
@@ -33,7 +34,8 @@
 }
 
 .two p {
-  margin: 0;
+  margin-bottom: 0;
+  margin-top: 10px;
 }
 
 .skills {
@@ -45,8 +47,7 @@
 .skills p {
   margin-right: 20px;
   color: white;
-  background-color: #ff69b4;
-  /* background-color: rgb(235, 107, 107); */
+  background-color: var(--heading-color);
   padding: 10px;
   border-radius: 5px;
   letter-spacing: 0.1rem;

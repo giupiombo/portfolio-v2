@@ -10,7 +10,7 @@
 }
 
 .details a {
-  color: #3a8fb7;
+  color: var(--subheading-color);
   font-weight: bold;
   text-decoration: none;
 }

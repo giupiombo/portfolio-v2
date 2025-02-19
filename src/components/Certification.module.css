@@ -1,5 +1,5 @@
 .certification {
-  background: linear-gradient(to bottom, var(--bg-tertiary), var(--bg-primary));
+  background: linear-gradient(to bottom, var(--bg-primary), var(--bg-tertiary));
   padding-top: 10vh;
   padding-bottom: 10vh;
 }

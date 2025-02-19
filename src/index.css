@@ -2,14 +2,20 @@
   --bg-primary: #ffffff;
   --bg-secondary: #f8f9fa;
   --bg-tertiary: #e9ecef;
+  --bg-card: rgba(255, 255, 255, 0.85);
   --text-color: #1e293b;
+  --heading-color: #ff69b4;
+  --subheading-color: #3a8fb7;
 }
 
 .dark-mode {
   --bg-primary: #1e1e2e;
   --bg-secondary: #2a2a3a;
   --bg-tertiary: #2a2a3a;
+  --bg-card: rgba(255, 255, 255, 0.1);
   --text-color: #ededed;
+  --heading-color: #ff69b4;
+  --subheading-color: #3a8fb7;
 }
 
 body {

@@ -19,11 +19,11 @@ const Education = () => {
           <p>
             Founder and former president of BRASA at Tech Student Organization
           </p>
-          <div className={classes.skills}>
+          {/* <div className={classes.skills}>
             <p>Programming</p>
             <p>Leadership</p>
             <p>Design</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
