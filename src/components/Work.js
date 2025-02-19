@@ -6,7 +6,7 @@ import Certification from './Certification';
 import { useRef } from 'react';
 import Skills from './Skills';
 
-const Work = () => {
+const Work = ({ theme }) => {
   const experienceRef = useRef(null);
 
   return (
@@ -17,8 +17,8 @@ const Work = () => {
         }
       />
       <Experience ref={experienceRef} />
-      <Skills />
-      <Certification />
+      <Skills theme={theme} />
+      <Certification theme={theme} />
       <Education />
     </div>
   );

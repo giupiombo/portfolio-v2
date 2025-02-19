@@ -8,13 +8,17 @@ import react from '../images/icons8-react-native.svg';
 import html from '../images/icons8-html5.svg';
 import css from '../images/icons8-css.svg';
 import java from '../images/icons8-java.svg';
+import aws from '../images/aws.png';
+import awsWhite from '../images/white-aws.png';
 import firebase from '../images/icons8-google-firebase-console.svg';
 import mongodb from '../images/icons8-mongo-db-96.png';
 import git from '../images/icons8-git.svg';
 import figma from '../images/icons8-figma.svg';
 import sonarcloud from '../images/sonarcloud-icon-512x449-31oqlodh.png';
 
-const Skills = () => {
+const Skills = ({ theme }) => {
+  const awsImage = theme === 'dark' ? awsWhite : aws;
+
   const skills = [
     { name: 'Python', logo: python },
     { name: 'JavaScript', logo: javascript },
@@ -25,7 +29,7 @@ const Skills = () => {
     { name: 'HTML', logo: html },
     { name: 'CSS', logo: css },
     { name: 'Java', logo: java },
-    { name: 'AWS', icon: <FaAws /> },
+    { name: 'AWS', logo: awsImage },
     { name: 'Snowflake', icon: <SiSnowflake /> },
     { name: 'Firebase', logo: firebase },
     { name: 'MongoDB', logo: mongodb },

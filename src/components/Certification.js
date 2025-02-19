@@ -5,35 +5,9 @@ import meta from '../images/meta.png';
 import aws from '../images/aws.png';
 import awsWhite from '../images/white-aws.png';
 import udemy from '../images/udemy.png';
-import React, { useState, useEffect } from 'react';
 
-const Certification = () => {
-  const [theme, setTheme] = useState('light'); // Default theme to 'light'
-  const [awsImage, setAwsImage] = useState(aws);
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    const handleThemeChange = () => {
-      const currentTheme = mediaQuery.matches ? 'dark' : 'light';
-      setTheme(currentTheme);
-    };
-
-    mediaQuery.addEventListener('change', handleThemeChange);
-
-    handleThemeChange();
-
-    return () => {
-      mediaQuery.removeEventListener('change', handleThemeChange);
-    };
-  }, []);
-
-  useEffect(() => {
-    if (theme === 'dark') {
-      setAwsImage(awsWhite);
-    } else {
-      setAwsImage(aws);
-    }
-  }, [theme]);
+const Certification = ({ theme }) => {
+  const awsImage = theme === 'dark' ? awsWhite : aws;
 
   const certificates = [
     {

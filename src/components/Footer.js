@@ -1,24 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import classes from './Footer.module.css';
 
-const Footer = () => {
-  const [theme, setTheme] = useState('light');
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    const handleThemeChange = () => {
-      const currentTheme = mediaQuery.matches ? 'dark' : 'light';
-      setTheme(currentTheme);
-    };
-
-    mediaQuery.addEventListener('change', handleThemeChange);
-    handleThemeChange();
-
-    return () => {
-      mediaQuery.removeEventListener('change', handleThemeChange);
-    };
-  }, []);
-
+const Footer = ({ theme }) => {
   const iconColor = theme === 'dark' ? '#fff' : '#000'; // Set color based on the theme
 
   return (
