@@ -5,6 +5,7 @@
   position: relative;
   bottom: 0;
   width: 100%;
+  background: linear-gradient(to bottom, var(--bg-tertiary), var(--bg-primary));
 }
 
 .socialIcons {
