@@ -44,7 +44,7 @@ const Certification = ({ theme }) => {
 
   return (
     <div className={classes.certification}>
-      <h2>Certification</h2>
+      <h2>Certifications</h2>
       <h3>Things I earned...</h3>
       <div className={classes.column}>
         {certificates.map((item, idx) => (

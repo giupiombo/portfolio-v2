@@ -1,29 +1,30 @@
 import { ReactTyped } from 'react-typed';
 import classes from './Hero.module.css';
+import dev from '../images/software-developer-illustration.png';
+// import dev from '../images/dev.png';
 
 const Hero = ({ scrollToExperience }) => {
   return (
     <div className={classes.hero}>
-      <h1>
-        Hi, <ReactTyped strings={['my name is Giulia.']} typeSpeed={100} loop />
-      </h1>
-      {/* <h1>
-        <ReactTyped
-          strings={[
-            "Hi, I'm Giulia!",
-            'Passionate About Frontend Development.',
-            'Building Beautiful & Interactive Experiences.',
-          ]}
-          typeSpeed={80}
-          backSpeed={50}
-          loop
-        />
-      </h1> */}
-      <h2>Software Developer | UI Enthusiast</h2>
-      {/* <p className={classes.heroDescription}>
-        I turn ideas into stunning, high-performing web applications. Obsessed
-        with clean code, modern UI, and seamless user experiences.
-      </p> */}
+      <div className={classes.columns}>
+        <div className={classes.imageContainer}>
+          <img src={dev} className={classes.heroImage} />
+        </div>
+        <div className={classes.textContainer}>
+          <h1>
+            Hi, <br />
+            <span className={classes.typedWrapper}>
+              <ReactTyped
+                strings={['my name is Giulia.']}
+                typeSpeed={100}
+                loop
+              />
+            </span>
+          </h1>
+          <h2>Software Developer | UI Enthusiast</h2>
+        </div>
+      </div>
+
       <button className={classes.heroButton} onClick={scrollToExperience}>
         View My Work ↓
       </button>

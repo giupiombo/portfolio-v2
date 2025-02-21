@@ -4,6 +4,43 @@
   background: linear-gradient(to bottom, var(--bg-primary), var(--bg-tertiary));
 }
 
+/* Main Heading Styling */
+.experience h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  position: relative;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  background: linear-gradient(
+    135deg,
+    var(--heading-color),
+    var(--subheading-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Underline Effect */
+.experience h2::after {
+  content: '';
+  width: 80px;
+  height: 5px;
+  background: var(--heading-color);
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  border-radius: 4px;
+}
+
+/* Subheading */
+.experience h3 {
+  font-size: 1.2rem;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
 .timeline {
   @media (min-width: 1000px) {
     margin-left: 10rem;

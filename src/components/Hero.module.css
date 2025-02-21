@@ -15,10 +15,52 @@
   padding: 20px;
 }
 
+/* Main Layout */
+.columns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Ensure content is centered vertically */
+  gap: 40px; /* Space between image and text */
+  text-align: left;
+
+  @media (min-width: 1000px) {
+    flex-direction: row;
+  }
+}
+
+/* Image */
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroImage {
+  width: 500px;
+  max-width: 100%;
+}
+
+/* Text Section */
+.textContainer {
+  max-width: 400px; /* Ensure the text container doesn't shrink */
+  min-width: 400px; /* Fixed width to avoid movement */
+  text-align: left;
+}
+
+/* Prevent Typed Text from Changing Width */
+.typedWrapper {
+  display: inline-block;
+  min-width: 220px; /* Adjust based on the longest sentence */
+}
+
+/* Text Styling */
 .hero h1 {
   font-size: 2.8rem;
   font-weight: bold;
   margin-bottom: 10px;
+  white-space: nowrap; /* Prevents text from wrapping */
+  color: var(--text-color);
 }
 
 .hero h2 {
@@ -26,20 +68,15 @@
   font-weight: 500;
   opacity: 0.9;
   margin-bottom: 15px;
+  color: var(--text-color);
 }
 
-.heroDescription {
-  font-size: 1.2rem;
-  max-width: 600px;
-  margin-top: 10px;
-  opacity: 0.8;
-}
-
+/* Button */
 .heroButton {
   margin-top: 20px;
   padding: 12px 24px;
   font-size: 1.1rem;
-  color: white;
+  color: var(--text-color);
   background: rgba(255, 255, 255, 0.2);
   border: none;
   border-radius: 8px;
