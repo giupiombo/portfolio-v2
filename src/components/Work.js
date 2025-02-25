@@ -13,6 +13,7 @@ const Work = ({ theme }) => {
   return (
     <div className={classes.work}>
       <Hero
+        theme={theme}
         scrollToExperience={() =>
           experienceRef.current?.scrollIntoView({ behavior: 'smooth' })
         }

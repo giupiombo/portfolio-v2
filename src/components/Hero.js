@@ -1,14 +1,17 @@
 import { ReactTyped } from 'react-typed';
 import classes from './Hero.module.css';
 import dev from '../images/software-developer-illustration.png';
-// import dev from '../images/dev.png';
+import meWhite from '../images/me-white.png';
+import meBlack from '../images/me-black.png';
 
-const Hero = ({ scrollToExperience }) => {
+const Hero = ({ theme, scrollToExperience }) => {
+  const meImage = theme === 'dark' ? meWhite : meBlack;
+
   return (
     <div className={classes.hero}>
       <div className={classes.columns}>
         <div className={classes.imageContainer}>
-          <img src={dev} className={classes.heroImage} />
+          <img src={meImage} className={classes.heroImage} />
         </div>
         <div className={classes.textContainer}>
           <h1>
