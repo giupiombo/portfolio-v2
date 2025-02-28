@@ -24,7 +24,7 @@ const Hero = ({ theme, scrollToExperience }) => {
               />
             </span>
           </h1>
-          <h2>Software Developer | UI Enthusiast</h2>
+          <h2>Software Engineer | UI Enthusiast</h2>
         </div>
       </div>
 
