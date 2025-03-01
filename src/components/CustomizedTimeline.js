@@ -90,16 +90,6 @@ export default function CustomizedTimeline() {
                 {line}
               </Typography>
             ))}
-            {/* <ul>
-              {item.description.map((line, idx) => (
-                <li
-                  key={idx}
-                  style={{ marginBottom: '0.5rem', textAlign: 'justify' }}
-                >
-                  {line}
-                </li>
-              ))}
-            </ul> */}
           </TimelineContent>
         </TimelineItem>
       ))}

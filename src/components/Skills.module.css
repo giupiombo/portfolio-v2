@@ -54,6 +54,8 @@
   max-width: 100%; /* Ensure it fills the available space */
   margin: 0 auto;
   justify-content: center; /* Ensure the content is centered */
+  place-items: center; /* Centers items inside each grid cell */
+  text-align: center; /* Ensures text is centered */
 }
 
 /* Skill Box */
