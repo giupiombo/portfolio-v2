@@ -6,6 +6,9 @@
   bottom: 0;
   width: 100%;
   background: linear-gradient(to bottom, var(--bg-tertiary), var(--bg-primary));
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevents horizontal scroll */
+  width: 100%;
 }
 
 .socialIcons {
