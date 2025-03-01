@@ -13,6 +13,9 @@
   align-items: center;
   text-align: center;
   padding: 20px;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevents horizontal scroll */
+  width: 100%;
 }
 
 /* Main Layout */
@@ -61,6 +64,12 @@
   margin-bottom: 10px;
   white-space: nowrap; /* Prevents text from wrapping */
   color: var(--text-color);
+
+  @media (max-width: 600px) {
+    font-size: 2rem;
+    white-space: normal;
+    text-align: center;
+  }
 }
 
 .hero h2 {
@@ -69,6 +78,12 @@
   opacity: 0.9;
   margin-bottom: 15px;
   color: var(--text-color);
+
+  @media (max-width: 600px) {
+    font-size: 1.5rem;
+    white-space: normal;
+    text-align: center;
+  }
 }
 
 /* Button */
