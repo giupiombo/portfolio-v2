@@ -11,8 +11,11 @@ import stefanini from '../images/stefanini.png';
 import tableau from '../images/tableau.svg';
 import ttu from '../images/ttu.png';
 import resource from '../images/resource.png';
+import { useMediaQuery } from '@mui/material';
 
 export default function CustomizedTimeline() {
+  const isMobile = useMediaQuery('(max-width:600px)'); // Detect mobile screen
+
   const experience = [
     {
       date: 'Feb 2023 - Present',
@@ -57,10 +60,13 @@ export default function CustomizedTimeline() {
   ];
 
   return (
-    <Timeline position="alternate">
+    <Timeline position={isMobile ? 'right' : 'alternate'}>
       {experience.map((item, idx) => (
         <TimelineItem key={idx}>
-          <TimelineOppositeContent sx={{ m: 'auto 0' }} variant="body2">
+          <TimelineOppositeContent
+            sx={isMobile ? { display: 'none' } : { m: 'auto 0' }}
+            variant="body2"
+          >
             {item.date}
           </TimelineOppositeContent>
           <TimelineSeparator>
@@ -82,6 +88,13 @@ export default function CustomizedTimeline() {
             <Typography color="#3A8FB7" style={{ fontWeight: 'bolder' }}>
               {item.role}
             </Typography>
+            {isMobile && (
+              <Typography
+                style={{ fontWeight: 'bolder', marginBottom: '0.5rem' }}
+              >
+                {item.date}
+              </Typography>
+            )}
             {item.description.map((line, idx) => (
               <Typography
                 key={idx}

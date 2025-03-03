@@ -42,6 +42,8 @@
 }
 
 .timeline {
+  margin-left: 1rem;
+  margin-right: 1rem;
   @media (min-width: 1000px) {
     margin-left: 10rem;
     margin-right: 10rem;
