@@ -12,9 +12,16 @@ import tableau from '../images/tableau.svg';
 import ttu from '../images/ttu.png';
 import resource from '../images/resource.png';
 import { useMediaQuery } from '@mui/material';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 export default function CustomizedTimeline() {
   const isMobile = useMediaQuery('(max-width:600px)'); // Detect mobile screen
+
+  const theme = createTheme({
+    typography: {
+      fontFamily: '"Montserrat", Arial, sans-serif', // Set global font to Montserrat
+    },
+  });
 
   const experience = [
     {
@@ -60,52 +67,55 @@ export default function CustomizedTimeline() {
   ];
 
   return (
-    <Timeline position={isMobile ? 'right' : 'alternate'}>
-      {experience.map((item, idx) => (
-        <TimelineItem key={idx}>
-          <TimelineOppositeContent
-            sx={isMobile ? { display: 'none' } : { m: 'auto 0' }}
-            variant="body2"
-          >
-            {item.date}
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineConnector />
-            <TimelineDot sx={{ backgroundColor: '#EDEDED' }}>
-              <img src={item.image} width={50} />
-            </TimelineDot>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent sx={{ py: '12px', px: 2 }}>
-            <Typography
-              variant="h6"
-              component="span"
-              color="#FF69B4"
+    <ThemeProvider theme={theme}>
+      <Timeline position={isMobile ? 'right' : 'alternate'}>
+        {experience.map((item, idx) => (
+          <TimelineItem key={idx}>
+            <TimelineOppositeContent
+              sx={isMobile ? { display: 'none' } : { m: 'auto 0' }}
+              variant="body2"
               style={{ fontWeight: 'bolder' }}
             >
-              {item.company}
-            </Typography>
-            <Typography color="#3A8FB7" style={{ fontWeight: 'bolder' }}>
-              {item.role}
-            </Typography>
-            {isMobile && (
+              {item.date}
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineConnector />
+              <TimelineDot sx={{ backgroundColor: '#EDEDED' }}>
+                <img src={item.image} width={50} />
+              </TimelineDot>
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent sx={{ py: '12px', px: 2 }}>
               <Typography
-                style={{ fontWeight: 'bolder', marginBottom: '0.5rem' }}
+                variant="h6"
+                component="span"
+                color="#FF69B4"
+                style={{ fontWeight: 'bolder' }}
               >
-                {item.date}
+                {item.company}
               </Typography>
-            )}
-            {item.description.map((line, idx) => (
-              <Typography
-                key={idx}
-                style={{ marginBottom: '0.5rem', textAlign: 'justify' }}
-              >
-                {line}
+              <Typography color="#3A8FB7" style={{ fontWeight: 'bolder' }}>
+                {item.role}
               </Typography>
-            ))}
-          </TimelineContent>
-        </TimelineItem>
-      ))}
-    </Timeline>
+              {isMobile && (
+                <Typography
+                  style={{ fontWeight: 'bolder', marginBottom: '0.5rem' }}
+                >
+                  {item.date}
+                </Typography>
+              )}
+              {item.description.map((line, idx) => (
+                <Typography
+                  key={idx}
+                  style={{ marginBottom: '0.5rem', textAlign: 'justify' }}
+                >
+                  {line}
+                </Typography>
+              ))}
+            </TimelineContent>
+          </TimelineItem>
+        ))}
+      </Timeline>
+    </ThemeProvider>
   );
 }
