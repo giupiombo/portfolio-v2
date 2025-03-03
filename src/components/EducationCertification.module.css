@@ -151,6 +151,12 @@
 }
 
 .certificates {
+  @media (max-width: 1000px) {
+    padding-top: 30px;
+  }
+}
+
+.certificatesList {
   display: grid;
   grid-template-columns: 1fr; /* Single column */
   justify-items: start; /* Align items to the left */

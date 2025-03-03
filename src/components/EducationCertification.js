@@ -66,9 +66,9 @@ const EducationCertification = ({ theme }) => {
             </div>
           </div>
         </div>
-        <div>
+        <div className={classes.certificates}>
           <h3>Things I earned...</h3>
-          <div className={classes.certificates}>
+          <div className={classes.certificatesList}>
             {certificates.map((item, idx) => (
               <CertificateItem
                 key={idx}
