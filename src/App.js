@@ -1,6 +1,5 @@
 import Footer from './components/Footer';
 import Work from './components/Work';
-import ThemeButton from './components/ThemeButton';
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -14,8 +13,7 @@ function App() {
 
   return (
     <>
-      <ThemeButton setTheme={setTheme} theme={theme} />
-      <Work theme={theme} />
+      <Work setTheme={setTheme} theme={theme} />
       <Footer theme={theme} />
     </>
   );

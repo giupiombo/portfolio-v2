@@ -1,14 +1,15 @@
 import { ReactTyped } from 'react-typed';
 import classes from './Hero.module.css';
-import dev from '../images/software-developer-illustration.png';
+import ThemeButton from './ThemeButton';
 import meWhite from '../images/me-white.png';
 import meBlack from '../images/me-black.png';
 
-const Hero = ({ theme, scrollToExperience }) => {
+const Hero = ({ setTheme, theme, scrollToExperience }) => {
   const meImage = theme === 'dark' ? meWhite : meBlack;
 
   return (
     <div className={classes.hero}>
+      <ThemeButton setTheme={setTheme} theme={theme} />
       <div className={classes.columns}>
         <div className={classes.imageContainer}>
           <img src={meImage} className={classes.heroImage} />
@@ -27,7 +28,6 @@ const Hero = ({ theme, scrollToExperience }) => {
           <h2>Software Engineer | UI Enthusiast</h2>
         </div>
       </div>
-
       <button className={classes.heroButton} onClick={scrollToExperience}>
         View My Work ↓
       </button>
