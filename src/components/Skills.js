@@ -15,6 +15,7 @@ import mongodb from '../images/icons8-mongo-db-96.png';
 import git from '../images/icons8-git.svg';
 import figma from '../images/icons8-figma.svg';
 import sonarcloud from '../images/sonarcloud-icon-512x449-31oqlodh.png';
+import tailwindcss from '../images/icons8-tailwindcss.svg';
 
 const Skills = ({ theme }) => {
   const awsImage = theme === 'dark' ? awsWhite : aws;
@@ -26,6 +27,7 @@ const Skills = ({ theme }) => {
     { name: 'React.js', logo: react },
     { name: 'Next.js', icon: <SiNextdotjs /> },
     { name: 'React Native', logo: react },
+    { name: 'TailwindCSS', logo: tailwindcss },
     { name: 'HTML', logo: html },
     { name: 'CSS', logo: css },
     { name: 'Java', logo: java },
