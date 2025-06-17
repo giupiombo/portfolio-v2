@@ -5,6 +5,7 @@ const ProjectCard = ({
   image,
   name,
   description,
+  note = '',
   skills,
   repository,
   website,
@@ -14,11 +15,23 @@ const ProjectCard = ({
 
   return (
     <div className={`${classes.card} ${reverse ? classes.reverse : ''}`}>
-      <img src={image} />
+      <div className={classes.imageWrapper}>
+        <img src={image} alt={name} />
+        <div
+          className={`${classes.overlay} ${
+            theme === 'light' ? classes.overlayLight : ''
+          }`}
+        ></div>
+      </div>
       <div className={classes.content}>
         <h3>{name}</h3>
         <div className={classes.description}>
           <p>{description}</p>
+          {note && (
+            <p className={classes.note}>
+              <b>Note:</b> {note}
+            </p>
+          )}
         </div>
         <ul>
           {skills.map((skill, idx) => (

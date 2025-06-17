@@ -12,7 +12,8 @@ const Projects = ({ theme }) => {
       image: recipeFinder,
       name: 'Recipe Finder',
       description:
-        'Recipe Finder is a website built with GenAI to help users search for meals based on selected ingredients, dietary restrictions, culinary and tools. There is also an option for pairing it with a drink selection.',
+        'AI-powered recipe generator that lets users find meals based on selected ingredients, dietary restrictions, available tools, and cuisines. Also includes smart drink pairing suggestions.',
+      note: 'The backend is hosted on a free-tier service and might take a moment to wake up — but it will run smoothly right after!',
       skills: [
         'React',
         'TypeScript',
@@ -29,7 +30,7 @@ const Projects = ({ theme }) => {
       image: photoAlbum,
       name: 'Photo Album',
       description:
-        'This website is a photo album to showcase some of the pictures taken by me.',
+        'A personal photo gallery app designed to showcase my original photography work in a clean, responsive layout.',
       skills: ['React', 'TypeScript', 'TailwindCSS', 'Vercel'],
       repository: 'https://github.com/giupiombo/photo-album',
       website: 'https://giupiombo-photo-album.vercel.app/',
@@ -46,6 +47,7 @@ const Projects = ({ theme }) => {
           image={item.image}
           name={item.name}
           description={item.description}
+          note={item.note}
           skills={item.skills}
           repository={item.repository}
           website={item.website}
