@@ -4,6 +4,7 @@ import Hero from './Hero';
 import { useRef } from 'react';
 import Skills from './Skills';
 import EducationCertification from './EducationCertification';
+import Projects from './Projects';
 
 const Work = ({ setTheme, theme }) => {
   const experienceRef = useRef(null);
@@ -18,6 +19,7 @@ const Work = ({ setTheme, theme }) => {
         }
       />
       <Experience ref={experienceRef} />
+      <Projects theme={theme} />
       <Skills theme={theme} />
       <EducationCertification theme={theme} />
     </div>

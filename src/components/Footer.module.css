@@ -5,7 +5,7 @@
   position: relative;
   bottom: 0;
   width: 100%;
-  background: linear-gradient(to bottom, var(--bg-tertiary), var(--bg-primary));
+  background: linear-gradient(to bottom, var(--bg-primary), var(--bg-tertiary));
   box-sizing: border-box;
   overflow-x: hidden; /* Prevents horizontal scroll */
   width: 100%;
@@ -20,6 +20,10 @@
 
 .socialIcons a {
   text-decoration: none;
+}
+
+.socialIcons a:hover {
+  opacity: 0.7;
 }
 
 .socialIcons i {
