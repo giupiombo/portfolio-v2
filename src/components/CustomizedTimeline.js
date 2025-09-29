@@ -28,40 +28,64 @@ export default function CustomizedTimeline() {
       date: 'Feb 2023 - Present',
       image: stefanini,
       company: 'Stefanini',
-      role: 'Software Developer I',
-      description: [
-        'Engineered user-friendly web interfaces using React, TypeScript, CSS and AWS services to provide real-time insights for efficient monitoring and optimization of Lambda function performance.',
-        'Designed and implemented an intuitive website for a LLM initiative and enhanced visual elements using React, TypeScript, CSS, and Material-UI. Incorporated authentication through Azure. ',
-        'Configured AWS API Gateway and developed AWS Lambda functions in Python and Java to handle shipment processing, including validation, creation, voiding, and price estimation, ensuring efficiency and scalability.',
-        'Designed and implemented an ETL pipeline using AWS Lambda, SNS, SQS, and RDS to efficiently process text files from S3 bucket. Developed in Python, with GitHub for version control and SonarCloud for continuous code quality analysis. ',
+      roles: [
+        {
+          position: 'Software Developer II',
+          date: 'Aug 2025 - Present',
+          description: [
+            'Developed an internal, user-friendly shipment tracking interface that visualizes processing status, highlights successes and failures, and enables advanced filtering. Added CSV export functionality to support operational analysis and reporting.',
+          ],
+        },
+        {
+          position: 'Software Developer I',
+          date: 'Feb 2023 - Aug 2025',
+          description: [
+            'Engineered user-friendly web interfaces using React, TypeScript, CSS and AWS services to provide real-time insights for efficient monitoring and optimization of Lambda function performance.',
+            'Designed and implemented an intuitive website for a LLM initiative and enhanced visual elements using React, TypeScript, CSS, and Material-UI. Incorporated authentication through Azure. ',
+            'Configured AWS API Gateway and developed AWS Lambda functions in Python and Java to handle shipment processing, including validation, creation, voiding, and price estimation, ensuring efficiency and scalability.',
+            'Designed and implemented an ETL pipeline using AWS Lambda, SNS, SQS, and RDS to efficiently process text files from S3 bucket. Developed in Python, with GitHub for version control and SonarCloud for continuous code quality analysis. ',
+          ],
+        },
       ],
     },
     {
       date: 'May 2022 - Aug 2022',
       image: tableau,
       company: 'Tableau',
-      role: 'Software Engineer Intern',
-      description: [
-        'Created automated CloudWatch dashboards through Terraform and designed detailed graphs in Tableau Cloud to optimize AWS SES events monitoring.',
-        'Created tables, procedures, and tasks in Snowflake, incorporating integrations and external stages to extract data from AWS S3 bucket and efficiently export it to Tableau Cloud, thereby significantly improving debugging capabilities and streamlining data analysis processes.',
+      roles: [
+        {
+          position: 'Software Engineer Intern',
+          description: [
+            'Created automated CloudWatch dashboards through Terraform and designed detailed graphs in Tableau Cloud to optimize AWS SES events monitoring.',
+            'Created tables, procedures, and tasks in Snowflake, incorporating integrations and external stages to extract data from AWS S3 bucket and efficiently export it to Tableau Cloud, thereby significantly improving debugging capabilities and streamlining data analysis processes.',
+          ],
+        },
       ],
     },
     {
       date: 'Sep 2020 - Apr 2022',
       image: ttu,
       company: 'Texas Tech University',
-      role: 'Undergraduate Student Researcher',
-      description: [
-        'Built a cost-efficient hand prosthetic proof-of-concept using servo motors and Arduino Uno, integrated with Google AMR technology to control the hand by voice commands.',
+      roles: [
+        {
+          position: 'Undergraduate Student Researcher',
+          description: [
+            'Built a cost-efficient hand prosthetic proof-of-concept using servo motors and Arduino Uno, integrated with Google AMR technology to control the hand by voice commands.',
+          ],
+        },
       ],
     },
     {
       date: 'Jan 2019 - Jul 2019',
       image: resource,
       company: 'Resource IT Solutions',
-      role: 'Software Developer Intern',
-      description: [
-        'Debugged and enhanced API functionality in pair programming development of Movida Car Rental’s digital totem while also documenting the APIs for expanded resources, leveraging my expertise in Java, HTML and CSS.',
+      roles: [
+        {
+          position: 'Software Developer Intern',
+          description: [
+            'Debugged and enhanced API functionality in pair programming development of Movida Car Rental’s digital totem while also documenting the APIs for expanded resources, leveraging my expertise in Java, HTML and CSS.',
+          ],
+        },
       ],
     },
   ];
@@ -94,23 +118,36 @@ export default function CustomizedTimeline() {
               >
                 {item.company}
               </Typography>
-              <Typography color="#3A8FB7" style={{ fontWeight: 'bolder' }}>
-                {item.role}
-              </Typography>
-              {isMobile && (
-                <Typography
-                  style={{ fontWeight: 'bolder', marginBottom: '0.5rem' }}
-                >
-                  {item.date}
-                </Typography>
-              )}
-              {item.description.map((line, idx) => (
-                <Typography
-                  key={idx}
-                  style={{ marginBottom: '0.5rem', textAlign: 'justify' }}
-                >
-                  {line}
-                </Typography>
+              {item.roles.map((role, idx) => (
+                <>
+                  <Typography color="#3A8FB7" style={{ fontWeight: 'bolder' }}>
+                    {role.position}
+                  </Typography>
+                  {role.date ? (
+                    <Typography
+                      style={{ fontWeight: 'bolder', marginBottom: '0.5rem' }}
+                    >
+                      {role.date}
+                    </Typography>
+                  ) : (
+                    isMobile && (
+                      <Typography
+                        style={{ fontWeight: 'bolder', marginBottom: '0.5rem' }}
+                      >
+                        {item.date}
+                      </Typography>
+                    )
+                  )}
+                  {role.description.map((line, idx) => (
+                    <Typography
+                      key={idx}
+                      style={{ marginBottom: '0.5rem', textAlign: 'justify' }}
+                    >
+                      {line}
+                    </Typography>
+                  ))}
+                  <p />
+                </>
               ))}
             </TimelineContent>
           </TimelineItem>
