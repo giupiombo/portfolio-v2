@@ -1,6 +1,7 @@
 import Footer from './components/Footer';
 import Work from './components/Work';
 import { useEffect, useState } from 'react';
+import { LanguageProvider } from './context/LanguageContext';
 
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
@@ -12,10 +13,10 @@ function App() {
   }, [theme]);
 
   return (
-    <>
+    <LanguageProvider>
       <Work setTheme={setTheme} theme={theme} />
       <Footer theme={theme} />
-    </>
+    </LanguageProvider>
   );
 }
 
