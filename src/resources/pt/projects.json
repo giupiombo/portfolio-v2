@@ -1,0 +1,31 @@
+{
+  "title": "Projetos",
+  "subtitle": "Projetos desenvolvidos...",
+  "projects": [
+    {
+      "image": "recipeFinder",
+      "name": "Recipe Finder",
+      "description": "Gerador de receitas com inteligência artificial que permite aos usuários encontrar pratos com base nos ingredientes disponíveis, restrições alimentares, utensílios de cozinha e preferências culinárias. Também oferece sugestões inteligentes de harmonização com bebidas.",
+      "note": "O backend está hospedado em um serviço gratuito, o que pode causar um pequeno atraso inicial no carregamento. No entanto, após esse tempo, o sistema funcionará normalmente!",
+      "skills": [
+        "React",
+        "TypeScript",
+        "TailwindCSS",
+        "Python",
+        "Google Gemini & ADK",
+        "Vercel",
+        "FastAPI"
+      ],
+      "repository": "https://github.com/giupiombo/recipe-finder-frontend",
+      "website": "https://recipe-finder-genai.vercel.app/"
+    },
+    {
+      "image": "photoAlbum",
+      "name": "Photo Album",
+      "description": "Uma galeria pessoal desenvolvida para exibir meu trabalho de fotografia em um layout limpo e responsivo.",
+      "skills": ["React", "TypeScript", "TailwindCSS", "Vercel"],
+      "repository": "https://github.com/giupiombo/photo-album",
+      "website": "https://giupiombo-photo-album.vercel.app/"
+    }
+  ]
+}
