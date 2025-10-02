@@ -1,6 +1,6 @@
 {
   "title": "Experiência",
-  "subtitle": "Projetos em que trabalhei...",
+  "subtitle": "Desenvolvimento profissional...",
   "experience": [
     {
       "date": "Fev 2023 - Presente",
@@ -8,20 +8,20 @@
       "company": "Stefanini",
       "roles": [
         {
-          "position": "Desenvolvedora de Software II",
+          "position": "Engenheira de Software II",
           "date": "Ago 2025 - Presente",
           "description": [
-            "Desenvolvi uma interface interna e intuitiva de rastreamento de remessas, com visualização do status de processamento, destaque de sucessos e falhas, além de filtros avançados. Implementei funcionalidade de exportação em CSV para auxiliar na análise operacional e elaboração de relatórios."
+            "Desenvolvimento de uma interface interna intuitiva de rastreamento de remessas, com visualização do status de processamento, destaque de sucessos e falhas, além de filtros avançados. Implementação de funcionalidade de exportação em CSV para auxiliar na análise operacional e elaboração de relatórios."
           ]
         },
         {
-          "position": "Desenvolvedora de Software I",
+          "position": "Engenheira de Software I",
           "date": "Fev 2023 - Ago 2025",
           "description": [
-            "Desenvolvi interfaces web responsivas utilizando React, TypeScript, CSS e serviços AWS, proporcionando monitoramento em tempo real e otimização do desempenho de funções Lambda.",
-            "Projetei e implementei um website para uma iniciativa com LLM, aprimorando os elementos visuais com React, TypeScript, CSS e Material-UI, além de integrar autenticação via Azure.",
-            "Configurei o AWS API Gateway e criei funções Lambda (Python e Java) para processamento de remessas, incluindo validação, criação, cancelamento e estimativa de preços, garantindo escalabilidade e eficiência.",
-            "Estruturei um pipeline ETL utilizando AWS Lambda, SNS, SQS e RDS para processar arquivos de texto provenientes de S3 buckets. O desenvolvimento foi realizado em Python, com controle de versão via GitHub e análise contínua de qualidade de código com SonarCloud."
+            "Planejamento e implementação de uma pipeline ETL utilizando AWS Lambda, SNS, SQS e RDS para processamento eficiente de arquivos de texto de S3 buckets. Realizado em Python, com controle de versão via GitHub e análise contínua de qualidade de código com SonarCloud.",
+            "Configuração de AWS API Gateway e desenvolvimento de funções Lambda (Python e Java) para processamento de remessas, incluindo validação, criação, cancelamento e estimativa de preços, garantindo escalabilidade e eficiência.",
+            "Planejamento e implementação de um website para uma iniciativa com LLM, aprimorando os elementos visuais com React, TypeScript, CSS e Material UI, além de integrar autenticação via Azure.",
+            "Desenvolvimento de um website responsivas utilizando React, TypeScript, CSS e serviços AWS, proporcionando monitoramento em tempo real e otimização do desempenho de funções Lambda."
           ]
         }
       ]
@@ -34,8 +34,8 @@
         {
           "position": "Estagiária de Engenharia de Software",
           "description": [
-            "Automatizei dashboards do CloudWatch por meio do Terraform e desenvolvi gráficos detalhados no Tableau Cloud para aprimorar o monitoramento de eventos do AWS SES.",
-            "Criei tabelas, procedimentos e tarefas no Snowflake, com integrações e stages externos para extrair dados do AWS S3 e exportá-los de forma otimizada para o Tableau Cloud, melhorando significativamente os processos de análise de dados e depuração."
+            "Criação de tabelas, procedimentos e tarefas no Snowflake com integrações e stages externos para extrair dados do AWS S3 bucket e exportá-los de forma otimizada para o Tableau Cloud, melhorando significativamente os processos de análise de dados e debugging.",
+            "Automatização de dashboards do CloudWatch por meio de Terraform e desenvolvimento de gráficos detalhados no Tableau Cloud para aprimorar o monitoramento de eventos do AWS SES."
           ]
         }
       ]
@@ -48,7 +48,7 @@
         {
           "position": "Pesquisadora de Graduação",
           "description": [
-            "Desenvolvi um protótipo de prótese de mão de baixo custo, utilizando servo motores e Arduino Uno, com integração à tecnologia Google AMR para controle por comandos de voz."
+            "Desenvolvimento de um protótipo de prótese de mão de baixo custo, utilizando servo motores e Arduino Uno, com integração à tecnologia Google AMR para controle por comandos de voz."
           ]
         }
       ]
@@ -59,9 +59,9 @@
       "company": "Resource IT Solutions",
       "roles": [
         {
-          "position": "Estagiária de Desenvolvimento de Software",
+          "position": "Estagiária de Engenharia de Software",
           "description": [
-            "Corrigi bugs e otimizei funcionalidades de APIs no desenvolvimento conjunto do totem digital da Movida Aluguel de Carros. Realizei a documentação das APIs e atuei com tecnologias como Java, HTML e CSS."
+            "Correção de bugs e otimização de funcionalidades de APIs no desenvolvimento conjunto do totem digital da Movida Aluguel de Carros. Realização de documentação das APIs e atuação com tecnologias como Java, HTML e CSS."
           ]
         }
       ]

@@ -8,20 +8,20 @@
       "company": "Stefanini",
       "roles": [
         {
-          "position": "Software Developer II",
+          "position": "Software Engineer II",
           "date": "Aug 2025 - Present",
           "description": [
             "Developed an internal, user-friendly shipment tracking interface that visualizes processing status, highlights successes and failures, and enables advanced filtering. Added CSV export functionality to support operational analysis and reporting."
           ]
         },
         {
-          "position": "Software Developer I",
+          "position": "Software Engineer I",
           "date": "Feb 2023 - Aug 2025",
           "description": [
-            "Engineered user-friendly web interfaces using React, TypeScript, CSS and AWS services to provide real-time insights for efficient monitoring and optimization of Lambda function performance.",
-            "Designed and implemented an intuitive website for a LLM initiative and enhanced visual elements using React, TypeScript, CSS, and Material-UI. Incorporated authentication through Azure. ",
+            "Designed and implemented an ETL pipeline using AWS Lambda, SNS, SQS, and RDS to efficiently process text files from S3 bucket. Developed in Python, with GitHub for version control and SonarCloud for continuous code quality analysis.",
             "Configured AWS API Gateway and developed AWS Lambda functions in Python and Java to handle shipment processing, including validation, creation, voiding, and price estimation, ensuring efficiency and scalability.",
-            "Designed and implemented an ETL pipeline using AWS Lambda, SNS, SQS, and RDS to efficiently process text files from S3 bucket. Developed in Python, with GitHub for version control and SonarCloud for continuous code quality analysis. "
+            "Designed and implemented an intuitive website for a LLM initiative and enhanced visual elements using React, TypeScript, CSS, and Material-UI. Incorporated authentication through Azure.",
+            "Engineered user-friendly web interfaces using React, TypeScript, CSS and AWS services to provide real-time insights for efficient monitoring and optimization of Lambda function performance."
           ]
         }
       ]
@@ -34,8 +34,8 @@
         {
           "position": "Software Engineer Intern",
           "description": [
-            "Created automated CloudWatch dashboards through Terraform and designed detailed graphs in Tableau Cloud to optimize AWS SES events monitoring.",
-            "Created tables, procedures, and tasks in Snowflake, incorporating integrations and external stages to extract data from AWS S3 bucket and efficiently export it to Tableau Cloud, thereby significantly improving debugging capabilities and streamlining data analysis processes."
+            "Created tables, procedures, and tasks in Snowflake, incorporating integrations and external stages to extract data from AWS S3 bucket and efficiently export it to Tableau Cloud, thereby significantly improving debugging capabilities and streamlining data analysis processes.",
+            "Created automated CloudWatch dashboards through Terraform and designed detailed graphs in Tableau Cloud to optimize AWS SES events monitoring."
           ]
         }
       ]
@@ -59,7 +59,7 @@
       "company": "Resource IT Solutions",
       "roles": [
         {
-          "position": "Software Developer Intern",
+          "position": "Software Engineer Intern",
           "description": [
             "Debugged and enhanced API functionality in pair programming development of Movida Car Rental’s digital totem while also documenting the APIs for expanded resources, leveraging my expertise in Java, HTML and CSS."
           ]
