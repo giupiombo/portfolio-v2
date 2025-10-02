@@ -3,20 +3,20 @@
   "subtitle": "Things I worked on...",
   "experience": [
     {
-      "date": "Feb 2023 - Present",
+      "date": "February 2023 - Present",
       "image": "stefanini",
       "company": "Stefanini",
       "roles": [
         {
           "position": "Software Engineer II",
-          "date": "Aug 2025 - Present",
+          "date": "August 2025 - Present",
           "description": [
             "Developed an internal, user-friendly shipment tracking interface that visualizes processing status, highlights successes and failures, and enables advanced filtering. Added CSV export functionality to support operational analysis and reporting."
           ]
         },
         {
           "position": "Software Engineer I",
-          "date": "Feb 2023 - Aug 2025",
+          "date": "February 2023 - August 2025",
           "description": [
             "Designed and implemented an ETL pipeline using AWS Lambda, SNS, SQS, and RDS to efficiently process text files from S3 bucket. Developed in Python, with GitHub for version control and SonarCloud for continuous code quality analysis.",
             "Configured AWS API Gateway and developed AWS Lambda functions in Python and Java to handle shipment processing, including validation, creation, voiding, and price estimation, ensuring efficiency and scalability.",
@@ -27,7 +27,7 @@
       ]
     },
     {
-      "date": "May 2022 - Aug 2022",
+      "date": "May 2022 - August 2022",
       "image": "tableau",
       "company": "Tableau",
       "roles": [
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "date": "Sep 2020 - Apr 2022",
+      "date": "September 2020 - April 2022",
       "image": "ttu",
       "company": "Texas Tech University",
       "roles": [
@@ -54,7 +54,7 @@
       ]
     },
     {
-      "date": "Jan 2019 - Jul 2019",
+      "date": "January 2019 - July 2019",
       "image": "resource",
       "company": "Resource IT Solutions",
       "roles": [
