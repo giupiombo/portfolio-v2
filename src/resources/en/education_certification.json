@@ -16,6 +16,12 @@
   "certificationSubtitle": "Things I earned...",
   "certificates": [
     {
+      "logo": "alura",
+      "title": "AI Immersion 3rd Edition",
+      "link": "https://cursos.alura.com.br/immersion/certificate/10f7f02c-fbfa-4a03-abbf-8d02995b7ada?lang",
+      "date": "Issued May 2025"
+    },
+    {
       "logo": "google",
       "title": "Project Management",
       "link": "https://www.coursera.org/account/accomplishments/specialization/MCCKS3QR5QL7",

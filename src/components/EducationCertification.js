@@ -1,6 +1,7 @@
 import ttu from '../images/ttu.png';
 import classes from './EducationCertification.module.css';
 import CertificateItem from './CertificateItem';
+import alura from '../images/alura.png';
 import google from '../images/google.png';
 import meta from '../images/meta.png';
 import aws from '../images/aws.png';
@@ -16,6 +17,7 @@ const EducationCertification = ({ theme }) => {
   const awsImage = theme === 'dark' ? awsWhite : aws;
 
   const imageMap = {
+    alura,
     google,
     meta,
     awsImage,
