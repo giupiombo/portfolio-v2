@@ -1,0 +1,31 @@
+{
+  "title": "Projects",
+  "subtitle": "Things I built...",
+  "projects": [
+    {
+      "image": "recipeFinder",
+      "name": "Recipe Finder",
+      "description": "AI-powered recipe generator that lets users search for meals based on selected ingredients, dietary restrictions, available tools, and cuisines. Also includes smart drink pairing suggestions.",
+      "note": "The backend is hosted on a free-tier service and might take a moment to wake up — but it will run smoothly right after!",
+      "skills": [
+        "React",
+        "TypeScript",
+        "TailwindCSS",
+        "Python",
+        "Google Gemini & ADK",
+        "Vercel",
+        "FastAPI"
+      ],
+      "repository": "https://github.com/giupiombo/recipe-finder-frontend",
+      "website": "https://recipe-finder-genai.vercel.app/"
+    },
+    {
+      "image": "photoAlbum",
+      "name": "Photo Album",
+      "description": "A personal photo gallery app designed to showcase my original photography work in a clean, responsive layout.",
+      "skills": ["React", "TypeScript", "TailwindCSS", "Vercel"],
+      "repository": "https://github.com/giupiombo/photo-album",
+      "website": "https://giupiombo-photo-album.vercel.app/"
+    }
+  ]
+}

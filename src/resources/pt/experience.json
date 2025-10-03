@@ -1,0 +1,70 @@
+{
+  "title": "Experiência",
+  "subtitle": "Desenvolvimento profissional...",
+  "experience": [
+    {
+      "date": "Fevereiro 2023 - Presente",
+      "image": "stefanini",
+      "company": "Stefanini",
+      "roles": [
+        {
+          "position": "Engenheira de Software II",
+          "date": "Agosto 2025 - Presente",
+          "description": [
+            "Desenvolvimento de uma interface interna intuitiva de rastreamento de remessas, com visualização do status de processamento, destaque de sucessos e falhas, além de filtros avançados. Implementação de funcionalidade de exportação em CSV para auxiliar na análise operacional e elaboração de relatórios."
+          ]
+        },
+        {
+          "position": "Engenheira de Software I",
+          "date": "Fevereiro 2023 - Agosto 2025",
+          "description": [
+            "Planejamento e implementação de uma pipeline ETL utilizando AWS Lambda, SNS, SQS e RDS para processamento eficiente de arquivos de texto de S3 buckets. Realizado em Python, com controle de versão via GitHub e análise contínua de qualidade de código com SonarCloud.",
+            "Configuração de AWS API Gateway e desenvolvimento de funções Lambda (Python e Java) para processamento de remessas, incluindo validação, criação, cancelamento e estimativa de preços, garantindo escalabilidade e eficiência.",
+            "Planejamento e implementação de um website para uma iniciativa com LLM, aprimorando os elementos visuais com React, TypeScript, CSS e Material UI, além de integrar autenticação via Azure.",
+            "Desenvolvimento de um website responsivas utilizando React, TypeScript, CSS e serviços AWS, proporcionando monitoramento em tempo real e otimização do desempenho de funções Lambda."
+          ]
+        }
+      ]
+    },
+    {
+      "date": "Maio 2022 - Agosto 2022",
+      "image": "tableau",
+      "company": "Tableau",
+      "roles": [
+        {
+          "position": "Estagiária de Engenharia de Software",
+          "description": [
+            "Criação de tabelas, procedimentos e tarefas no Snowflake com integrações e stages externos para extrair dados do AWS S3 bucket e exportá-los de forma otimizada para o Tableau Cloud, melhorando significativamente os processos de análise de dados e debugging.",
+            "Automatização de dashboards do CloudWatch por meio de Terraform e desenvolvimento de gráficos detalhados no Tableau Cloud para aprimorar o monitoramento de eventos do AWS SES."
+          ]
+        }
+      ]
+    },
+    {
+      "date": "Setembro 2020 - Abril 2022",
+      "image": "ttu",
+      "company": "Texas Tech University",
+      "roles": [
+        {
+          "position": "Pesquisadora de Graduação",
+          "description": [
+            "Desenvolvimento de um protótipo de prótese de mão de baixo custo, utilizando servo motores e Arduino Uno, com integração à tecnologia Google AMR para controle por comandos de voz."
+          ]
+        }
+      ]
+    },
+    {
+      "date": "Janeiro 2019 - Julho 2019",
+      "image": "resource",
+      "company": "Resource IT Solutions",
+      "roles": [
+        {
+          "position": "Estagiária de Engenharia de Software",
+          "description": [
+            "Correção de bugs e otimização de funcionalidades de APIs no desenvolvimento conjunto do totem digital da Movida Aluguel de Carros. Realização de documentação das APIs e atuação com tecnologias como Java, HTML e CSS."
+          ]
+        }
+      ]
+    }
+  ]
+}

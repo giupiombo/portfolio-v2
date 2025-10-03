@@ -16,8 +16,13 @@ import git from '../images/icons8-git.svg';
 import figma from '../images/icons8-figma.svg';
 import sonarcloud from '../images/sonarcloud-icon-512x449-31oqlodh.png';
 import tailwindcss from '../images/icons8-tailwindcss.svg';
+import { useTranslation } from '../hooks/useTranslation';
+import { useLanguage } from '../context/LanguageContext';
 
 const Skills = ({ theme }) => {
+  const { lang } = useLanguage();
+  const t = useTranslation(lang, 'skills');
+
   const awsImage = theme === 'dark' ? awsWhite : aws;
 
   const skills = [
@@ -44,8 +49,8 @@ const Skills = ({ theme }) => {
 
   return (
     <div className={classes.skills}>
-      <h2>Skills</h2>
-      <h3>Things I'm good at...</h3>
+      <h2>{t.title}</h2>
+      <h3>{t.subtitle}</h3>
       <div className={classes.skillGrid}>
         {skills.map((skill, index) => (
           <div key={index} className={classes.skillBox}>

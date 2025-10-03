@@ -1,0 +1,55 @@
+{
+  "title": "Educação e Certificações",
+  "educationSubtitle": "Conquistas acadêmicas...",
+  "education": [
+    {
+      "university": "Texas Tech University",
+      "period": "Agosto de 2019 - Dezembro de 2022",
+      "degree": "Bacharelado em Engenharia da Computação",
+      "notes": [
+        "Honors College",
+        "Especialização em Matemática e Ciência da Computação",
+        "Fundadora e primeira Presidente da organização estudantil BRASA at Tech"
+      ]
+    }
+  ],
+  "certificationSubtitle": "Certificações obtidas...",
+  "certificates": [
+    {
+      "logo": "alura",
+      "title": "Imersão IA 3ª Edição",
+      "link": "https://cursos.alura.com.br/immersion/certificate/10f7f02c-fbfa-4a03-abbf-8d02995b7ada?lang",
+      "date": "Emitido em Maio 2025"
+    },
+    {
+      "logo": "google",
+      "title": "Project Management",
+      "link": "https://www.coursera.org/account/accomplishments/specialization/MCCKS3QR5QL7",
+      "date": "Emitido em Outubro 2024"
+    },
+    {
+      "logo": "meta",
+      "title": "Front-End Developer",
+      "link": "https://coursera.org/verify/professional-cert/YIRPC57GWMSE",
+      "date": "Emitido em Setembro 2024"
+    },
+    {
+      "logo": "awsImage",
+      "title": "AWS Certified Cloud Practitioner",
+      "link": "https://www.credly.com/badges/47a25b5c-8e9e-4f5b-ba9b-e838f005c6cd/linked_in_profile",
+      "date": "Emitido em Março 2023"
+    },
+    {
+      "logo": "udemy",
+      "title": "React – Guia Completo",
+      "link": "https://www.udemy.com/certificate/UC-dedd07af-796f-408d-a379-4f9983e3945f/",
+      "date": "Emitido em Março 2023"
+    },
+    {
+      "logo": "udemy",
+      "title": "React Native",
+      "link": "https://udemy-certificate.s3.amazonaws.com/pdf/UC-a7187b09-d6c2-4a1b-8659-1feca2cd594b.pdf",
+      "date": "Emitido em Março 2023"
+    }
+  ]
+}
