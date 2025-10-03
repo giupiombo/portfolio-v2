@@ -1,10 +1,10 @@
 import classes from './Work.module.css';
-import Experience from './Experience';
-import Hero from './Hero';
+import Experience from '../components/Experience';
+import Hero from '../components/Hero';
 import { useRef } from 'react';
-import Skills from './Skills';
-import EducationCertification from './EducationCertification';
-import Projects from './Projects';
+import Skills from '../components/Skills';
+import EducationCertification from '../components/EducationCertification';
+import Projects from '../components/Projects';
 
 const Work = ({ setTheme, theme }) => {
   const experienceRef = useRef(null);

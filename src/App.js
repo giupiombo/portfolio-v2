@@ -1,5 +1,5 @@
 import Footer from './components/Footer';
-import Work from './components/Work';
+import Work from './views/Work';
 import { useEffect, useState } from 'react';
 import { LanguageProvider } from './context/LanguageContext';
 
