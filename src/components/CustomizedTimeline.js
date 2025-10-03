@@ -59,7 +59,7 @@ export default function CustomizedTimeline({ experience }) {
                 {item.company}
               </Typography>
               {item.roles.map((role, idx) => (
-                <>
+                <div key={idx}>
                   <Typography color="#3A8FB7" style={{ fontWeight: 'bolder' }}>
                     {role.position}
                   </Typography>
@@ -87,7 +87,7 @@ export default function CustomizedTimeline({ experience }) {
                     </Typography>
                   ))}
                   <p />
-                </>
+                </div>
               ))}
             </TimelineContent>
           </TimelineItem>

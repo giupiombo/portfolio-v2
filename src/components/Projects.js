@@ -17,8 +17,6 @@ const Projects = ({ theme }) => {
     photoAlbum,
   };
 
-  console.log(t);
-
   return (
     <div className={classes.projects}>
       <h2>{t.title}</h2>

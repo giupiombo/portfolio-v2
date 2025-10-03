@@ -36,16 +36,16 @@ const EducationCertification = ({ theme }) => {
             </div>
             <div className={classes.two}>
               {t.education.map((item, idx) => (
-                <>
+                <div key={idx}>
                   <h4>{item.university}</h4>
                   <p>{item.term}</p>
                   <p>{item.degree}</p>
                   {item.notes.map((note, idx) => (
-                    <>
+                    <div key={idx}>
                       <p>{note}</p>
-                    </>
+                    </div>
                   ))}
-                </>
+                </div>
               ))}
             </div>
           </div>
