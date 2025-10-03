@@ -40,7 +40,10 @@ const Hero = ({ setTheme, theme, scrollToExperience }) => {
               <ReactTyped strings={t.typed} typeSpeed={100} loop />
             </span>
           </h1>
-          <h2>{t.subtitle}</h2>
+          <h2>
+            {t.subtitle[0]} <br />
+            {t.subtitle[1]}
+          </h2>
         </div>
       </div>
       <button className={classes.heroButton} onClick={scrollToExperience}>

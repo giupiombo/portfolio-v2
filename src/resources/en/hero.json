@@ -1,6 +1,6 @@
 {
   "greeting": "Hi,",
   "typed": ["my name is Giulia."],
-  "subtitle": "Software Engineer | UI Enthusiast",
+  "subtitle": ["Software Engineer |", "UI Enthusiast"],
   "button": "View My Work ↓"
 }
