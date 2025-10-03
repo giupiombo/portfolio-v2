@@ -1,9 +1,24 @@
-import { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useState, useEffect } from 'react';
 
 const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
-  const [lang, setLang] = useState('en');
+  const getDefaultLang = () => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('lang');
+      if (saved) return saved;
+
+      const userLang = navigator.language || navigator.userLanguage;
+      return userLang.startsWith('pt') ? 'pt' : 'en';
+    }
+    return 'en';
+  };
+
+  const [lang, setLang] = useState(getDefaultLang);
+
+  useEffect(() => {
+    localStorage.setItem('lang', lang);
+  }, [lang]);
 
   const toggleLang = () => {
     setLang((prev) => (prev === 'en' ? 'pt' : 'en'));
