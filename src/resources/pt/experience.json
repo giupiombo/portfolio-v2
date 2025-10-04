@@ -8,14 +8,14 @@
       "company": "Stefanini",
       "roles": [
         {
-          "position": "Engenheira de Software II",
+          "position": "Engenheira de Software Pleno",
           "date": "Agosto 2025 - Presente",
           "description": [
             "Desenvolvimento de uma interface interna intuitiva de rastreamento de remessas, com visualização do status de processamento, destaque de sucessos e falhas, além de filtros avançados. Implementação de funcionalidade de exportação em CSV para auxiliar na análise operacional e elaboração de relatórios."
           ]
         },
         {
-          "position": "Engenheira de Software I",
+          "position": "Engenheira de Software Júnior",
           "date": "Fevereiro 2023 - Agosto 2025",
           "description": [
             "Planejamento e implementação de uma pipeline ETL utilizando AWS Lambda, SNS, SQS e RDS para processamento eficiente de arquivos de texto de S3 buckets. Realizado em Python, com controle de versão via GitHub e análise contínua de qualidade de código com SonarCloud.",
