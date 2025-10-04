@@ -5,7 +5,8 @@
     {
       "image": "recipeFinder",
       "name": "Recipe Finder",
-      "description": "Gerador de receitas com inteligência artificial (IA) que permite aos usuários procurar pratos com base nos ingredientes disponíveis, restrições alimentares, utensílios de cozinha e preferências culinárias. Também oferece sugestões inteligentes de harmonização com bebidas.",
+      "description": "Gerador de receitas com inteligência artificial (IA) que permite aos usuários procurararem pratos com base nos ingredientes disponíveis, restrições alimentares, utensílios de cozinha e preferências culinárias. Também oferece sugestões inteligentes de harmonização com bebidas.",
+      "noteTitle": "Obs:",
       "note": "O backend está hospedado em um serviço gratuito, o que pode causar um pequeno atraso inicial no carregamento. No entanto, após esse tempo, o sistema funcionará normalmente!",
       "skills": [
         "React",

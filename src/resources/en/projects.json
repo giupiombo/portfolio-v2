@@ -6,6 +6,7 @@
       "image": "recipeFinder",
       "name": "Recipe Finder",
       "description": "AI-powered recipe generator that lets users search for meals based on selected ingredients, dietary restrictions, available tools, and cuisines. Also includes smart drink pairing suggestions.",
+      "noteTitle": "Note:",
       "note": "The backend is hosted on a free-tier service and might take a moment to wake up — but it will run smoothly right after!",
       "skills": [
         "React",

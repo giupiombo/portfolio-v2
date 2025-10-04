@@ -34,7 +34,7 @@
         {
           "position": "Estagiária de Engenharia de Software",
           "description": [
-            "Criação de tabelas, procedimentos e tarefas no Snowflake com integrações e stages externos para extrair dados do AWS S3 bucket e exportá-los de forma otimizada para o Tableau Cloud, melhorando significativamente os processos de análise de dados e debugging.",
+            "Criação de tabelas, procedimentos e tarefas no Snowflake com integrações e estágios externos para extrair dados do AWS S3 bucket e exportá-los de forma otimizada para o Tableau Cloud, melhorando significativamente os processos de análise de dados e debugging.",
             "Automatização de dashboards do CloudWatch por meio de Terraform e desenvolvimento de gráficos detalhados no Tableau Cloud para aprimorar o monitoramento de eventos do AWS SES."
           ]
         }
@@ -61,7 +61,7 @@
         {
           "position": "Estagiária de Engenharia de Software",
           "description": [
-            "Correção de bugs e otimização de funcionalidades de APIs no desenvolvimento conjunto do totem digital da Movida Aluguel de Carros. Realização de documentação das APIs e atuação com tecnologias como Java, HTML e CSS."
+            "Correção de bugs e otimização de funcionalidades de APIs em pair programming do totem digital da Movida Aluguel de Carros. Realização de documentação das APIs e atuação com tecnologias como Java, HTML e CSS."
           ]
         }
       ]

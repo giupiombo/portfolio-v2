@@ -5,6 +5,7 @@ const ProjectCard = ({
   image,
   name,
   description,
+  noteTitle = '',
   note = '',
   skills,
   repository,
@@ -29,7 +30,7 @@ const ProjectCard = ({
           <p>{description}</p>
           {note && (
             <p className={classes.note}>
-              <b>Note:</b> {note}
+              <b>{noteTitle}</b> {note}
             </p>
           )}
         </div>

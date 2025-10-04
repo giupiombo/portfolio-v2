@@ -28,6 +28,7 @@ const Projects = ({ theme }) => {
           image={imageMap[item.image]}
           name={item.name}
           description={item.description}
+          noteTitle={item.noteTitle}
           note={item.note}
           skills={item.skills}
           repository={item.repository}
